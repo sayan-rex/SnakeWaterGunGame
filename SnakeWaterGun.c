@@ -5,22 +5,24 @@
 int snakeWaterGun(char you, char comp){
     // returns 1 if you win, -1 if you lose and 0 if draw
     // Condition for draw
+    
     // Cases covered:
-    // ss
-    // gg
-    // ww
+    // snake-snake
+    // gun-gun
+    // water-water
     if(you == comp){
         return 0;
     }
 
     // Non-draw conditions
+    
     // Cases covered:
-    // sg
-    // gs
-    // sw 
-    // ws
-    // gw
-    // wg
+    // snake-gun
+    // gun-snake
+    // snake-water 
+    // water-snake
+    // gun-water
+    // water-gun
     
 
     if(you=='s' && comp=='g'){
